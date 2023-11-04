@@ -1,0 +1,10 @@
+name: GitHub Action Demo
+on: push
+jobs:
+  Explore-GitHub-Actons:
+    runs-on:ubuntu-lastest
+    steps:
+      - name:Print the triggering event
+        run: echo"The jop was triggered by ${{ github.event_name }}."
+      - name:print the OS of the runner
+        run: echo "THis jop is running on a ${{ runner.os }} server"
